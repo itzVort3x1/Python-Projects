@@ -24,7 +24,7 @@ will_rain = False
 
 for number in range(0, 12):
     condition_code = (weather_data["hourly"][number]["weather"][0]["id"])
-    if int(condition_code) > 700:
+    if int(condition_code) < 700:
         will_rain = True
 
 
