@@ -20,7 +20,7 @@ price = soup.find(id="priceblock_ourprice").get_text()
 price_without_currency = price.split("₹")[1]
 formatted_currency = price_without_currency.replace(',', "")
 price_as_float = float(formatted_currency)
-if price_as_float < 2000.0:
+if price_as_float < <add a check value in float>:
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(MY_EMAIL, MY_PASSWORD)
